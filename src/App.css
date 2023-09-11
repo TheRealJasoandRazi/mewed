@@ -1,0 +1,8 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2148&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  /*overflow: hidden; This line prevents scrolling */
+}
+
