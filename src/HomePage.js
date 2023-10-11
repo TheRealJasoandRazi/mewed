@@ -21,7 +21,8 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InfoIcon from '@mui/icons-material/Info';
-import image from './images/image5.png'
+import image from './images/ProjectImage.jpeg'
+
 const card = (
       <Card
         sx={{ bgcolor: "cyan" 

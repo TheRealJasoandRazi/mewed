@@ -13,6 +13,7 @@ import {
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import HomeIcon from '@mui/icons-material/Home';
 import Person2Icon from '@mui/icons-material/Person2';
+import ConstructionIcon from '@mui/icons-material/Construction';
 
 function NavBar() {
     const iconSize = '2rem';
@@ -33,6 +34,11 @@ function NavBar() {
               <a href="/Projects">
                 <IconButton color="primary">
                   <AssignmentIcon style={{ fontSize: iconSize }} />
+                </IconButton>
+              </a>
+              <a href="/MySkills">
+                <IconButton color="primary">
+                  <ConstructionIcon style={{ fontSize: iconSize }} />
                 </IconButton>
               </a>
               <a href="/AboutMe">

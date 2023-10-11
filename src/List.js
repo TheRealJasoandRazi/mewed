@@ -19,7 +19,7 @@ function List({ items }) {
               width: "60%",
               overflowY: "hidden",
               margin: "0",
-              height: "60vh",
+              height: "40vh",
               position: "relative",
               "&:hover .item-bar": {
                 opacity: 1,
