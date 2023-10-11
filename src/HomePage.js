@@ -75,7 +75,7 @@ function HomePage() {
         <Box name="center-left" mr={15}>
           <h1 style={{margin: "0", padding: "0px"}}> Hi,</h1>
           <h1 style={{margin: "0", margin: "5px"}}>I'm Nemanja</h1>
-          <a href='/AboutMe'>
+          <a href='/AboutMe' style={{ textDecoration: 'none' }}>
             <Button variant="contained">About Me </Button>
           </a>
           <Stack direction = "row" sx={{ 
