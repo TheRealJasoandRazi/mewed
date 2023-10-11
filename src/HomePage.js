@@ -33,10 +33,10 @@ const card = (
       </Typography>
       <Divider />
       <CardMedia
-        component="img" // Set the component to "img" for images
+        component="img" 
         alt="Project Image"
-        height="200" // Set the desired height for your image
-        src={image} // Provide the image URL or path
+        height="200" 
+        src={image} 
         style={{
           objectFit: "cover",
           width: "100%",
