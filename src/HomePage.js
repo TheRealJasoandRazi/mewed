@@ -29,7 +29,7 @@ const card = (
       }} 
       >
       <Typography sx={{ fontSize: 20}} color="text.primary" gutterBottom>
-        My Personal Projects, test
+        My Personal Projects
       </Typography>
       <Divider />
       <CardMedia
