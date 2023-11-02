@@ -23,6 +23,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InfoIcon from '@mui/icons-material/Info';
 import image from './images/ProjectImage.jpeg'
 
+import { Particles } from 'react-tsparticles';
+
 const card = (
       <Card
         sx={{ bgcolor: "cyan" 
@@ -71,6 +73,26 @@ function HomePage() {
         justifyContent: 'space-between',
       }}
     >
+       <Particles
+        id="tsparticles"
+        options={{
+          background: {
+            color: {
+              value: 'transparent',
+            },
+            image: {
+              src: './images/neatbg.png', // Set the PNG background image
+              repeat: 'no-repeat',
+              size: 'cover',
+            },
+          },
+          particles: {
+            number: {
+              value: 100, // Set the number of particles
+            },
+          }
+        }}
+      />
       <Box sx={{ flex: 1, textAlign: 'center' }}> 
         <Box name="center-left" mr={15}>
           <h1 style={{margin: "0", padding: "0px"}}> Hi,</h1>

@@ -79,7 +79,7 @@ import {
             click the "solve" button and the computer will show you how to complete the maze! If you want to look at how the program 
             looks like you can check out the screenshots and gifs below.
           </Typography>
-          <Link href="https://github.com/TheRealJasoandRazi/mewed" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/TheRealJasoandRazi/Maze_Game" target="_blank" rel="noopener noreferrer">
             Source Code Here
           </Link>
         </Stack>

@@ -1,10 +1,10 @@
 import { Flex, Container, Box, Stack, Typography, Card, Divider, CardMedia, Grid } from "@mui/material";
 import image from './images/image5.png';
 import DevOps from './images/DevOps.png';
+import TradingPlatform from './images/marketplace.png';
 
 const commonCardStyle = {
   bgcolor: 'cyan',
-  height: '300'
 }
 
 const MazeGameCard = (
@@ -13,7 +13,10 @@ const MazeGameCard = (
       Maze Game
     </Typography>
     <Divider />
-    <Box>
+    <Box
+    style={{
+      height: '40vh',
+    }}>
       <CardMedia
           component="img"
           alt="Project Image"
@@ -28,22 +31,27 @@ const MazeGameCard = (
   </Card>
 );
 
-const DevOpsCard = (
+const MockPlatformCard = (
   <Card sx={commonCardStyle}>
     <Typography sx={{ fontSize: 20 }} color="text.primary" gutterBottom>
-      Dev Ops
+      Mock Trading Platform
     </Typography>
     <Divider />
-    <CardMedia
-      component="img"
-      alt="Project Image"
-      src={DevOps}
-      style={{
-        objectFit: "cover",
-        width: "100%",
-        height: "100%",
-      }}
-    />
+    <Box
+    style={{
+      height: '40vh',
+    }}>
+      <CardMedia
+        component="img"
+        alt="Project Image"
+        src={TradingPlatform}
+        style={{
+          objectFit: "cover",
+          width: "100%",
+          height: "100%",
+        }}
+      />
+    </Box>
   </Card>
 );
 
@@ -69,8 +77,8 @@ function Projects() {
             </a>
           </Box>
           <Box sx={{ flex: 1, textAlign: 'center'}}>
-            <a href="/DevOps" style={{ textDecoration: "none" }}>
-              {DevOpsCard}
+            <a href="/MockTradingPlatform" style={{ textDecoration: "none" }}>
+              {MockPlatformCard}
             </a>
           </Box>
       </Stack>

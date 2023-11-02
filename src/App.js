@@ -7,7 +7,7 @@ import AboutMe from './AboutMe';
 import MazeGame from './MazeGame';
 import MySkills from './MySkills'
 import DevOps from './DevOps';
-
+import Mock from './MockTradingPlatform';
 function App() {
   return (
     <>
@@ -19,6 +19,7 @@ function App() {
           <Route path="/MazeGame" element={<MazeGame/>} />
           <Route path="/MySkills" element={<MySkills/>} />
           <Route path="/DevOps" element={<DevOps/>} />
+          <Route path="/MockTradingPlatform" element={<Mock/>} />
         </Routes>
     </>
   );
