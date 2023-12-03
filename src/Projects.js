@@ -1,39 +1,5 @@
 import { Flex, Container, Box, Stack, Typography, Card, Divider, CardMedia, Grid } from "@mui/material";
 import image from './images/image5.png';
-<<<<<<< HEAD
-import DevOps from './images/DevOps.png';
-import TradingPlatform from './images/marketplace.png';
-
-const commonCardStyle = {
-  bgcolor: 'cyan',
-}
-
-const MazeGameCard = (
-  <Card sx={commonCardStyle}>
-    <Typography sx={{ fontSize: 20 }} color="text.primary" gutterBottom>
-      Maze Game
-    </Typography>
-    <Divider />
-    <Box
-    style={{
-      height: '40vh',
-    }}>
-      <CardMedia
-          component="img"
-          alt="Project Image"
-          src={image}
-          style={{
-            objectFit: "cover",
-            width: "100%",
-            height: "100%",
-          }}
-        />
-    </Box>
-  </Card>
-);
-
-const MockPlatformCard = (
-=======
 import TradingPlatform from './images/MockTradingPlatform.jpeg';
 import { useSpring, animated, useScroll, useInView} from '@react-spring/web';
 
@@ -64,29 +30,11 @@ const MazeGameCard = (
 );
 
 const MockTradingPlatform = (
->>>>>>> 4fffd6702 (commit message)
   <Card sx={commonCardStyle}>
     <Typography sx={{ fontSize: 20 }} color="text.primary" gutterBottom>
       Mock Trading Platform
     </Typography>
     <Divider />
-<<<<<<< HEAD
-    <Box
-    style={{
-      height: '40vh',
-    }}>
-      <CardMedia
-        component="img"
-        alt="Project Image"
-        src={TradingPlatform}
-        style={{
-          objectFit: "cover",
-          width: "100%",
-          height: "100%",
-        }}
-      />
-    </Box>
-=======
     <CardMedia
       component="img"
       alt="Project Image"
@@ -97,40 +45,10 @@ const MockTradingPlatform = (
         height: "100%",
       }}
     />
->>>>>>> 4fffd6702 (commit message)
   </Card>
 );
 
 function Projects() {
-<<<<<<< HEAD
-  return (
-    <Container
-      fixed
-      sx={{
-        bgcolor: "transparent",
-        marginTop: '10vh',
-        marginBottom: '10vh',
-        textAlign: 'center',
-      }}
-    >
-        <h1>Projects</h1>
-        <Stack direction="row" spacing={5} sx={{ 
-            justifyContent: 'flex-end',
-            padding: '1vh' 
-        }}>
-          <Box sx={{ flex: 1, textAlign: 'center' }}>
-            <a href="/MazeGame" style={{ textDecoration: "none" }}>
-              {MazeGameCard}
-            </a>
-          </Box>
-          <Box sx={{ flex: 1, textAlign: 'center'}}>
-            <a href="/MockTradingPlatform" style={{ textDecoration: "none" }}>
-              {MockPlatformCard}
-            </a>
-          </Box>
-      </Stack>
-    </Container>
-=======
 
     const [ref1, inView1] = useInView();
     const [ref2, inView2] = useInView();
@@ -195,7 +113,6 @@ function Projects() {
                 {MockTradingPlatform}
             </animated.div>
     </Stack>
->>>>>>> 4fffd6702 (commit message)
   );
 }
 
