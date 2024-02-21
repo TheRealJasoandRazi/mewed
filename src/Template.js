@@ -135,7 +135,6 @@ function Template({ itemData, GifsData }) {
                   height: '100%',
                   objectFit: 'fill',
                 }}
-                loading="lazy"
               />
             </Grid>
             <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center' }}>
@@ -187,7 +186,6 @@ function Template({ itemData, GifsData }) {
                         height: '100%',
                         objectFit: 'fill',
                       }}
-                      loading="lazy"
                     />
                   </Grid>
                   <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center' }}>
