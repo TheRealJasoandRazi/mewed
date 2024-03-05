@@ -33,7 +33,7 @@ import EmailIcon from '@mui/icons-material/Email';
             <Box>
                 <Stack spacing={2}>
                     <Typography>
-                        I'm a dedicated university student currently pursuing a Bachelor of Computer Science at Swinburne University, currently in my second year. My academic journey has been marked by consistent effort, maintaining a distinction grade (70%+) throughout my course. My consistent pursuit to learn caused me to work diligently toward earning my AWS Associate Solutions Architect certificate.
+                        I'm a dedicated university student currently pursuing a Bachelor of Computer Science at Swinburne University, currently in my third year. My academic journey has been marked by consistent effort, maintaining a distinction grade (70%+) throughout my course. My consistent pursuit to learn caused me to work diligently toward earning my AWS Associate Solutions Architect certificate.
                         Over the past two years, my learning has driven me to develop a diverse skill set. I've gained proficiency in working with SQL databases, programming in C++/C#, and JavaScript.
                     </Typography>
                     <Typography>
