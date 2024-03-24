@@ -4,13 +4,11 @@ import AboutMe from './AboutMe';
 import MazeGame from './MazeGame';
 import MySkills from './MySkills'
 import Marketplace from './MockTradingPlatform';
+import Transition from './InterPageTransition';
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-
 import Typewriter from "typewriter-effect";
 import React, { useEffect, useRef, useState } from 'react';
-
-import Transition from './InterPageTransition';
 import { useInView } from 'react-intersection-observer';
 
 const url = (name: string, wrap = false) =>
