@@ -45,6 +45,13 @@ function Template({ itemData, GifsData }) {
   const [gifsTab, setGifsTab] = React.useState(0);
   const [showGifs, setShowGifs] = React.useState(false);
 
+  const getWindowWidth = () => { //used for jest test since it doesn't open browsers
+    if (typeof window !== 'undefined') {
+        return window.innerWidth;
+    }
+    return 0;
+  };
+
   const handleScreenshotChange = (event, newValue) => {
     setScreenshotTab(newValue);
   };
@@ -58,12 +65,12 @@ function Template({ itemData, GifsData }) {
     setGifsTab(0);
   };
 
-  const [screenWidth] = useState(window.innerWidth);
+  const [screenWidth] = useState(getWindowWidth());
   const [change, setChange] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      const newScreenWidth = window.innerWidth;
+      const newScreenWidth = getWindowWidth();
       
       // Update the change state based on the newScreenWidth
       setChange(newScreenWidth > 585);

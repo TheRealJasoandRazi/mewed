@@ -2,6 +2,7 @@ import { Flex, Container, Box, Stack, Typography, Card, Divider, CardMedia, Grid
 import image from './images/image5.png';
 import TradingPlatform from './images/MockTradingPlatform.jpeg';
 import { useSpring, animated, useScroll, useInView} from '@react-spring/web';
+import React from 'react';
 
 const commonCardStyle = {
   bgcolor: 'cyan',
@@ -49,6 +50,12 @@ const MockTradingPlatform = (
 );
 
 function Projects() {
+  const getWindowWidth = () => { //used for jest test since it doesn't open browsers
+    if (typeof window !== 'undefined') {
+        return window.innerWidth;
+    }
+    return 0;
+  };
 
     const [ref1, inView1] = useInView();
     const [ref2, inView2] = useInView();
@@ -56,15 +63,15 @@ function Projects() {
   
     const left2right = useSpring({
       from: { x: 0 },
-      to: { x: inView1 ? window.innerWidth * 0.1 : 0 },
+      to: { x: inView1 ? getWindowWidth() * 0.1 : 0 },
     });
     const right2left = useSpring({
-      from: { x: window.innerWidth },
-      to: { x: inView2 ? window.innerWidth * 0.4 : window.innerWidth },
+      from: { x: getWindowWidth() },
+      to: { x: inView2 ? getWindowWidth() * 0.4 : getWindowWidth() },
     });
     const left2right2 = useSpring({
       from: { x: 0 },
-      to: { x: inView3 ? window.innerWidth * 0.1 : 0 },
+      to: { x: inView3 ? getWindowWidth() * 0.1 : 0 },
     });
     return (
     <Stack spacing={2} sx={{paddingTop: '1%'}}>
