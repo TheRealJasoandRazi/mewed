@@ -7,10 +7,10 @@ import MazeGame from '../src/MazeGame.js';
 import MySkills from '../src/MySkills.js';
 
 
-describe('components render correctly', () => {
+//describe('components render correctly', () => {
     test('projects', () => {
         const component = renderer.create(<Projects />);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
-});
+//});
